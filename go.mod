@@ -1,6 +1,6 @@
 module ds2api
 
-go 1.24
+go 1.23
 
 require (
 	github.com/andybalholm/brotli v1.0.6

@@ -6,7 +6,7 @@ RUN npm ci
 COPY webui ./
 RUN npm run build
 
-FROM golang:1.24 AS go-builder
+FROM golang:1.23 AS go-builder
 WORKDIR /app
 ARG TARGETOS
 ARG TARGETARCH
