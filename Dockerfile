@@ -10,6 +10,7 @@ FROM golang:1.23 AS go-builder
 WORKDIR /app
 ARG TARGETOS
 ARG TARGETARCH
+ENV GOPROXY=https://goproxy.cn,direct
 COPY go.mod go.sum* ./
 RUN go mod download
 COPY . .
