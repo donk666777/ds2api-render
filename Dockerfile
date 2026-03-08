@@ -7,7 +7,8 @@ COPY go.mod go.sum ./
 RUN go mod download
 
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux go build -o /ds2api ./cmd/ds2api
+RUN ls -la ./cmd/ds2api/
+RUN CGO_ENABLED=0 GOOS=linux go build -v -o /ds2api ./cmd/ds2api
 
 FROM alpine:3.19
 
