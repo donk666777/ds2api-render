@@ -6,7 +6,6 @@ dist
 *.md
 plans
 tests
-webui
 .env
 .env.*
 *.log
